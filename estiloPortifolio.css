@@ -1,0 +1,1159 @@
+/* ===================== PALETA DE CORES ===================== */
+:root {
+    --cor-primaria: rgb(0, 174, 239);
+    /* Azul ciano principal */
+    --cor-secundaria: #6B7280;
+    /* Cinza escuro suave */
+    --cor-fundo: #0C0C0C;
+    /* Fundo preto */
+    --cor-texto: #EAEAEA;
+    /* Texto claro */
+    --cor-acento: #38BDF8;
+    /* Azul claro (hover/botões) */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ===================== ESTILOS ORIGINAIS ===================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+h1,
+h2,
+h3,
+span,
+a {
+    font-weight: 700;
+    /* negrito */
+    color: var(--cor-primaria);
+}
+
+p,
+li {
+    font-weight: 400;
+    /* normal */
+    color: var(--cor-texto);
+}
+
+a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+#header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+nav {
+    padding: 10px 20px;
+    background-color: var(--cor-fundo);
+    height: 101px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#menu-btn {
+    height: 40px;
+    width: 40px;
+    /* background-color: var(--cor-primaria); */
+    background-color: var(--cor-fundo);
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    /* color: var(--cor-fundo); */
+    color: var(--cor-primaria);
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#btnCancelar {
+    height: 40px;
+    width: 40px;
+    /* background-color: var(--cor-primaria); */
+    background-color: #222;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    /* color: var(--cor-fundo); */
+    color: var(--cor-primaria);
+    font-size: 30px;
+    font-weight: 700;
+    /* margin-bottom: 4px; */
+    cursor: pointer;
+    display: none;
+}
+
+nav ul {
+    gap: 2vh;
+}
+
+/* =====================container 1===================== */
+#container-1main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#banner-container {
+    position: relative;
+}
+
+.banner {
+    height: 704px;
+    width: 100%;
+}
+
+#quadrado-branco {
+    position: absolute;
+    top: 234px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--cor-fundo);
+    height: 470px;
+    width: 940px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    /* flex-wrap: wrap; */
+}
+
+#quadrado-branco figure {
+    height: 100%;
+    flex: 1;
+    width: 470px;
+    overflow: hidden;
+}
+
+#quadrado-branco figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#container-info {
+    width: 470px;
+    height: 100%;
+    background-color: transparent;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    /* margin-right: -150px; */
+}
+
+#container-info-identificacao {
+    margin-left: 90px;
+    width: 100%;
+}
+
+#container-info-identificacao h2 {
+    /* margin-left: 0px; */
+    font-size: 30px;
+    color: var(--cor-primaria);
+}
+
+#container-info-identificacao>h4 {
+    /* margin-left: 8px; */
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: var(--cor-secundaria);
+}
+
+#container-info-identificacao ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: var(--cor-texto);
+}
+
+#container-info-identificacao ul li {
+    margin-bottom: 18px;
+}
+
+/* =====================container 2===================== */
+#container-2main {
+    background-color: var(--cor-fundo);
+    width: 100%;
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-2main header {
+    background-color: var(--cor-primaria);
+    width: 940px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-2main header ul {
+    gap: 20px;
+}
+
+#container-2main header ul li img {
+    height: 24px;
+    width: 24px;
+}
+
+#texto-introducao {
+    margin-top: 30px;
+    color: var(--cor-primaria);
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto-introducao h4 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#texto-introducao p {
+    font-size: 18px;
+    color: var(--cor-texto);
+}
+
+/* =====================container 3===================== */
+#container-3main {
+    background-color: var(--cor-fundo);
+    height: 663px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-formacao {
+    width: 100%;
+    height: 100px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--cor-secundaria);
+    border-bottom: 1px solid var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+#info-formacao {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#centralizar-informacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-left: 30vh;
+}
+
+#container-anos {
+    height: 410px;
+    /* width: 450px; */
+    display: flex;
+    justify-content: end;
+    margin-top: -20px;
+}
+
+#container-anos ul {
+    color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+#container-anos ul h6 {
+    font-size: 14px;
+}
+
+#div-linha {
+    height: 432px;
+    width: 2px;
+    background-color: var(--cor-secundaria);
+}
+
+#div-linha ul {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#div-linha ul li {
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: var(--cor-primaria);
+    margin-left: -2px;
+}
+
+
+#container-descricao {
+    height: 430px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    margin-top: -0px;
+}
+
+#last2 {
+    padding-top: 20px;
+}
+
+#container-descricao ul {
+    font-size: 14px;
+    color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* =====================container 4===================== */
+#container-4main {
+    background-color: var(--cor-fundo);
+    height: 483px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titulo-habilidades {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+#div-maior-habilidades {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner-abilidades {
+    /* height: 383px; */
+    width: 100%;
+}
+
+#container-quadrados {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    width: 100%;
+}
+
+.colunas {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.lista-quadrados {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 50px;
+}
+
+.quadrados {
+    background-color: var(--cor-fundo);
+    width: 415px;
+    height: 77px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid var(--cor-secundaria);
+}
+
+.quadrados img {
+    height: 45px;
+    width: 45px;
+}
+
+#bandeiraEUA {
+    height: 50px;
+    width: 50px;
+}
+
+
+/* =====================container 5===================== */
+#container-5main {
+    background-color: var(--cor-fundo);
+    height: 483px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-5main h5 {
+    color: var(--cor-primaria);
+}
+
+/* =====================Footer===================== */
+footer {
+    background-color: var(--cor-fundo);
+    height: 612px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.divisoes-footer {
+    height: 100%;
+    width: 50%;
+    background-color: rgba(176, 176, 176, 0.1);
+}
+
+#titulo-footer h5 {
+    color: var(--cor-primaria);
+}
+
+/* =====================Div 1 Footer===================== */
+#div-footer1 {
+    border-right: 1px solid var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+#div-footer1-inside {
+    height: 80%;
+    width: 500px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario input,
+#formulario textarea {
+    outline: none;
+    border: 1px solid var(--cor-secundaria);
+}
+
+#container-input-duplo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.input {
+    padding-left: 20px;
+    /* mesmo valor do placeholder */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: var(--cor-fundo);
+    /* cor do texto que a pessoa digita */
+    border: 1px solid var(--cor-fundo);
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-duplo {
+    height: 35px;
+    width: 180px;
+}
+
+#telefone {
+    height: 35px;
+    width: 394px;
+    margin-top: 14px;
+}
+
+#textarea {
+    padding-right: 20px;
+    resize: none;
+    height: 132px;
+    width: 374px;
+    margin-top: 14px;
+    padding-top: 20px;
+}
+
+#formulario input::placeholder,
+#formulario textarea::placeholder {
+    /* padding-left: 20px; */
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-fundo);
+    font-size: 15px;
+}
+
+#botao {
+    outline: none;
+    border: none;
+    height: 35px;
+    width: 414px;
+    margin-top: 14px;
+    background-color: var(--cor-primaria);
+    color: white;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+/* =====================Div 2 Footer===================== */
+#div-footer2 {
+    border-left: 1px solid var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#div-footer2-inside {
+    height: 80%;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#info-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    color: var(--cor-texto);
+}
+
+#espaco-email {
+    margin-top: 15px;
+}
+
+#div-icones-footer {
+    margin-bottom: 108px;
+}
+
+#linha-footer {
+    height: 1px;
+    width: 300px;
+    background-color: var(--cor-acento);
+}
+
+#icones-footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#icones-footer li img {
+    height: 24px;
+    width: 24px;
+}
+
+/* ========================================= */
+
+/* ================Banner Container 1========================= */
+.container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-image: radial-gradient(ellipse 1.5px 2px at 1.5px 50%,
+            #0000 0,
+            #0000 90%,
+            #000 100%);
+    background-size: 25px 8px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    --c: #09f;
+    background-color: #000;
+    background-image: radial-gradient(4px 100px at 0px 235px, var(--c), #0000),
+        radial-gradient(4px 100px at 300px 235px, var(--c), #0000),
+        radial-gradient(1.5px 1.5px at 150px 117.5px, var(--c) 100%, #0000 150%),
+        radial-gradient(4px 100px at 0px 252px, var(--c), #0000),
+        radial-gradient(4px 100px at 300px 252px, var(--c), #0000),
+        radial-gradient(1.5px 1.5px at 150px 126px, var(--c) 100%, #0000 150%),
+        radial-gradient(4px 100px at 0px 150px, var(--c), #0000),
+        radial-gradient(4px 100px at 300px 150px, var(--c), #0000),
+        radial-gradient(1.5px 1.5px at 150px 75px, var(--c) 100%, #0000 150%),
+        radial-gradient(4px 100px at 0px 253px, var(--c), #0000),
+        radial-gradient(4px 100px at 300px 253px, var(--c), #0000),
+        radial-gradient(1.5px 1.5px at 150px 126.5px, var(--c) 100%, #0000 150%),
+        radial-gradient(4px 100px at 0px 204px, var(--c), #0000),
+        radial-gradient(4px 100px at 300px 204px, var(--c), #0000),
+        radial-gradient(1.5px 1.5px at 150px 102px, var(--c) 100%, #0000 150%),
+        radial-gradient(4px 100px at 0px 134px, var(--c), #0000),
+        radial-gradient(4px 100px at 300px 134px, var(--c), #0000),
+        radial-gradient(1.5px 1.5px at 150px 67px, var(--c) 100%, #0000 150%),
+        radial-gradient(4px 100px at 0px 179px, var(--c), #0000),
+        radial-gradient(4px 100px at 300px 179px, var(--c), #0000),
+        radial-gradient(1.5px 1.5px at 150px 89.5px, var(--c) 100%, #0000 150%),
+        radial-gradient(4px 100px at 0px 299px, var(--c), #0000),
+        radial-gradient(4px 100px at 300px 299px, var(--c), #0000),
+        radial-gradient(1.5px 1.5px at 150px 149.5px, var(--c) 100%, #0000 150%),
+        radial-gradient(4px 100px at 0px 215px, var(--c), #0000),
+        radial-gradient(4px 100px at 300px 215px, var(--c), #0000),
+        radial-gradient(1.5px 1.5px at 150px 107.5px, var(--c) 100%, #0000 150%),
+        radial-gradient(4px 100px at 0px 281px, var(--c), #0000),
+        radial-gradient(4px 100px at 300px 281px, var(--c), #0000),
+        radial-gradient(1.5px 1.5px at 150px 140.5px, var(--c) 100%, #0000 150%),
+        radial-gradient(4px 100px at 0px 158px, var(--c), #0000),
+        radial-gradient(4px 100px at 300px 158px, var(--c), #0000),
+        radial-gradient(1.5px 1.5px at 150px 79px, var(--c) 100%, #0000 150%),
+        radial-gradient(4px 100px at 0px 210px, var(--c), #0000),
+        radial-gradient(4px 100px at 300px 210px, var(--c), #0000),
+        radial-gradient(1.5px 1.5px at 150px 105px, var(--c) 100%, #0000 150%);
+    background-size:
+        300px 235px,
+        300px 235px,
+        300px 235px,
+        300px 252px,
+        300px 252px,
+        300px 252px,
+        300px 150px,
+        300px 150px,
+        300px 150px,
+        300px 253px,
+        300px 253px,
+        300px 253px,
+        300px 204px,
+        300px 204px,
+        300px 204px,
+        300px 134px,
+        300px 134px,
+        300px 134px,
+        300px 179px,
+        300px 179px,
+        300px 179px,
+        300px 299px,
+        300px 299px,
+        300px 299px,
+        300px 215px,
+        300px 215px,
+        300px 215px,
+        300px 281px,
+        300px 281px,
+        300px 281px,
+        300px 158px,
+        300px 158px,
+        300px 158px,
+        300px 210px,
+        300px 210px,
+        300px 210px;
+    animation: hi 150s linear infinite;
+}
+
+@keyframes hi {
+    0% {
+        background-position:
+            0px 220px,
+            3px 220px,
+            151.5px 337.5px,
+            25px 24px,
+            28px 24px,
+            176.5px 150px,
+            50px 16px,
+            53px 16px,
+            201.5px 91px,
+            75px 224px,
+            78px 224px,
+            226.5px 350.5px,
+            100px 19px,
+            103px 19px,
+            251.5px 121px,
+            125px 120px,
+            128px 120px,
+            276.5px 187px,
+            150px 31px,
+            153px 31px,
+            301.5px 120.5px,
+            175px 235px,
+            178px 235px,
+            326.5px 384.5px,
+            200px 121px,
+            203px 121px,
+            351.5px 228.5px,
+            225px 224px,
+            228px 224px,
+            376.5px 364.5px,
+            250px 26px,
+            253px 26px,
+            401.5px 105px,
+            275px 75px,
+            278px 75px,
+            426.5px 180px;
+    }
+
+    to {
+        background-position:
+            0px 6800px,
+            3px 6800px,
+            151.5px 6917.5px,
+            25px 13632px,
+            28px 13632px,
+            176.5px 13758px,
+            50px 5416px,
+            53px 5416px,
+            201.5px 5491px,
+            75px 17175px,
+            78px 17175px,
+            226.5px 17301.5px,
+            100px 5119px,
+            103px 5119px,
+            251.5px 5221px,
+            125px 8428px,
+            128px 8428px,
+            276.5px 8495px,
+            150px 9876px,
+            153px 9876px,
+            301.5px 9965.5px,
+            175px 13391px,
+            178px 13391px,
+            326.5px 13540.5px,
+            200px 14741px,
+            203px 14741px,
+            351.5px 14848.5px,
+            225px 18770px,
+            228px 18770px,
+            376.5px 18910.5px,
+            250px 5082px,
+            253px 5082px,
+            401.5px 5161px,
+            275px 6375px,
+            278px 6375px,
+            426.5px 6480px;
+    }
+}
+
+/* ========================================= */
+
+/* ================Banner Container 2========================= */
+
+
+
+#container-habilidades {
+    height: 383px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    --s: 147px;
+    /* control the size*/
+    --c1: rgb(0, 174, 239, 1);
+    --c2: #000000;
+
+    --d: calc(var(--s)/10);
+    /* control the gap between stars */
+
+    --_g: var(--c1) 36deg, #0000 0;
+    background:
+        conic-gradient(from 162deg at calc(var(--s) * .5) calc(var(--s) * .68), var(--_g)),
+        conic-gradient(from 18deg at calc(var(--s) * .19) calc(var(--s) * .59), var(--_g)),
+        conic-gradient(from 306deg at calc(var(--s) * .81) calc(var(--s) * .59), var(--_g)),
+        var(--c2);
+    background-position: 0 calc(var(--s) * 0.35);
+    background-size: calc(var(--s) + var(--d)) calc(var(--s) + var(--d));
+}
+
+/* Responsividade Celular */
+
+@media (max-width: 1017px) {
+
+    #header {
+        width: 390px;
+    }
+
+    /* ========================== Menu Hamburguer ==========================*/
+    #menu {
+        font-size: 30px;
+        gap: 60px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0px;
+        right: 0px;
+        overflow: hidden;
+        /* padding-left: 10px; */
+        /* border-radius: 8px; */
+    }
+
+    #btnCancelar {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 20;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    #menu.active {
+        display: flex;
+        /* Mostra o menu quando ativado */
+    }
+
+    /* ========================== Menu Hamburguer ==========================*/
+    /* ========================== Container 1 ==========================*/
+    .banner {
+        height: 973px;
+        width: 390px;
+    }
+
+    /* .container{
+        width: 390px;
+    } */
+
+    #quadrado-branco {
+        width: 360px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 740px;
+    }
+
+    /* 940 */
+    #quadrado-branco figure {
+        height: 170px;
+        width: 360px;
+    }
+
+    #quadrado-branco figure img {
+        height: 100%;
+    }
+
+    #container-info {
+        flex: 0.5;
+        height: 350px;
+        width: 100%;
+    }
+
+    #container-info h2 {
+        padding-top: 20px;
+        margin-left: 20px;
+        font-size: 36px;
+    }
+
+    #engenheiro {
+       margin-right: 16px; 
+    }
+
+    #container-info-identificacao ul {
+        margin-right: 29px;
+    }
+
+    #container-info h4,
+    #container-info p {
+        font-size: 18px;
+    }
+
+
+    #quadrado-branco figure img {
+        height: 100%;
+    }
+
+    #container-info-identificacao {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* ========================== Container 1 ==========================*/
+
+    /* ========================== Container 2 ==========================*/
+
+    #container-2main header {
+        width: 360px;
+    }
+
+    #texto-introducao {
+        width: 360px;
+        /* margin-bottom: 20px; */
+    }
+
+    #texto-introducao h4{
+        font-size: 25px;
+        width: 100%;
+    }
+
+    #texto-introducao p{
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    /* ========================== Container 2 ==========================*/
+    /* ========================== Container 3 ==========================*/
+    #container-3main {
+        height: 1100px;
+        width: 390px;
+        /* margin-bottom: 100px; */
+    }
+
+    #centralizar-informacao {
+        height: 100%;
+        align-items: baseline;
+        margin-top: 130px;
+        margin-left: 0vh;
+        gap: 25px;
+    }
+
+    /* ========================== Anos ==========================*/
+    #container-anos {
+        height: 645px;
+        /* width: 180px; */
+        /* padding-left: 10px; */
+    }
+
+    #container-anos ul {
+        padding-left: 10px;
+    }
+
+    #container-anos ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    #container-anos ul li p {
+        width: 100px;
+    }
+
+    /* ========================== Anos ==========================*/
+    /* ========================== Linha ==========================*/
+
+    #div-linha {
+        height: 850px;
+    }
+
+    #div-linha ul {
+        height: 68%;
+    }
+
+    /* ========================== Linha ==========================*/
+    /* ========================== Descricao ==========================*/
+
+    #container-descricao {
+        width: 163px;
+        height: 810px;
+    }
+
+    #container-descricao p {
+        width: 180px;
+    }
+
+    #last2 {
+        padding-top: 63px;
+    }
+
+    .responsividade-celular {
+        margin-top: 0px;
+    }
+
+    /* ========================== Descricao ==========================*/
+
+    /* ========================== Container 3 ==========================*/
+    /* ========================== Container 4 ==========================*/
+    #container-4main {
+        height: 900px;
+    }
+
+    #div-maior-habilidades {
+        height: 798px;
+    }
+
+    #container-habilidades {
+        height: 798px;
+        --s: 124px;
+    }
+
+    .baixo {
+        margin-top: 30px;
+    }
+
+    .lista-quadrados {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .quadrados {
+        width: 360px;
+        margin-left: 6px;
+    }
+
+    .quadrados img {
+        height: 40px;
+        width: 40px;
+        margin-left: 10px;
+    }
+
+    .quadrados span {
+        margin-left: 20px;
+    }
+
+    /* ========================== Container 4 ==========================*/
+
+    /* ========================== Footer ==========================*/
+
+    footer {
+        height: 887px;
+        width: 390px;
+    }
+
+    #titulo-footer {
+        height: 87px;
+    }
+
+    #container-footer {
+        flex-wrap: wrap;
+    }
+
+    .divisoes-footer {
+        height: 400px;
+        width: 100%;
+    }
+
+    /* =====================Div 1 Footer===================== */
+    #div-footer1 {
+        border-bottom: 1px solid var(--cor-secundaria);
+        border-right: 0px solid var(--cor-secundaria);
+        align-items: center;
+    }
+
+    #div-footer1-inside {
+        width: 390px;
+        margin-left: 0px;
+    }
+
+    #formulario {
+        width: 390px;
+    }
+
+    .input-duplo {
+        width: 140px;
+    }
+
+    #telefone {
+        width: 316px;
+        margin-left: 26px;
+    }
+
+    #textarea {
+        width: 296px;
+        margin-left: 26px;
+    }
+
+    #botao {
+        width: 337px;
+        margin-left: 26px;
+    }
+
+    /* =====================Div 1 Footer===================== */
+    /* =====================Div 2 Footer===================== */
+    #div-footer2 {
+        margin-top: -4px;
+        border-left: 0px solid var(--cor-secundaria);
+        align-items: center;
+    }
+
+    #div-footer2-inside {
+        margin-left: 0px;
+    }
+
+    #div-footer2 h2 {
+        font-size: 40px;
+    }
+
+    #div-footer2 h4,
+    #div-footer2 p {
+        font-size: 24px;
+    }
+
+    #container-info-footer {
+        margin-bottom: 20px;
+    }
+
+    #icones-footer {
+        gap: 75px;
+    }
+
+    #icones-footer li img {
+        height: 50px;
+        width: 50px;
+    }
+
+    /* =====================Div 2 Footer===================== */
+}
