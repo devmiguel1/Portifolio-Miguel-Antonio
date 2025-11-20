@@ -26,7 +26,7 @@ const menuBtn = document.getElementById("menu-btn");
             menuBtn.style.display = 'block';
             document.body.style.overflow = 'auto';
             aberto = false;
-        });
+        }); 
 
         if (window.matchMedia("(max-width: 1017px)").matches) {
             menu.addEventListener('click', () => {
